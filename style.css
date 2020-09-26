@@ -33,6 +33,7 @@ header {
           align-items: center;
   background-image: radial-gradient(white, black);
   height: 100px;
+  margin-bottom: 100px;
 }
 
 header a {
@@ -50,5 +51,81 @@ header nav > ul > li {
 
 header nav > ul > li :hover {
   color: blue;
+}
+
+.Show {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bildShow {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: cycleImages 31s infinite;
+          animation: cycleImages 31s infinite;
+}
+
+.bildShow:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.bildShow:nth-child(2) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.bildShow:nth-child(3) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.bildShow img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.textShow {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  /*background-color: rgba(0, 0, 0, 0.411) ;*/
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: white;
+  text-align: center;
+}
+
+.textShow h5 {
+  font-size: 4em;
+  font-family: 'Concert One', cursive;
+  letter-spacing: 3px;
+}
+
+@-webkit-keyframes cycleImages {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes cycleImages {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
