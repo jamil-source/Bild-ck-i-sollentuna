@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: radial-gradient(blue , white);
+    
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: radial-gradient(white, black);
+    height: 100px;
+    
+    a {
+        color: white;
+    }
+    
+    nav > ul > li{
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-family: 'Concert One', cursive;;
+        :hover{
+            color: blue;
+        }
+
+    }
+}
