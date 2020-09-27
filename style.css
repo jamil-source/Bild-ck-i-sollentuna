@@ -15,7 +15,8 @@ html, body {
 }
 
 body {
-  background-image: radial-gradient(blue, white);
+  /*background-image: radial-gradient(blue , white);*/
+  background-color: rgba(0, 0, 0, 0.767);
 }
 
 header {
