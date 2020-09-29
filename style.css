@@ -143,6 +143,11 @@ header nav > ul > li :hover {
   background: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
   background: linear-gradient(red, blue);
   border-radius: 10px;
+  color: white;
+}
+
+.hero .form-box .button-box .toggle-btn:hover {
+  opacity: 0.9;
 }
 
 .social-media {
@@ -198,6 +203,12 @@ header nav > ul > li :hover {
   border: 0;
   outline: none;
   border-radius: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
 }
 
 .check-box {
@@ -209,6 +220,14 @@ span {
   font-size: 12px;
   position: absolute;
   bottom: 68px;
+}
+
+#login {
+  left: 50px;
+}
+
+#register {
+  left: 450px;
 }
 
 @-webkit-keyframes cycleImages {

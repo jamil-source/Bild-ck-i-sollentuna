@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
@@ -53,39 +53,65 @@
 
                 </div>
             </div>
-        </div> 
+        </div>
 
 
         <div class="hero">
             <div class="form-box">
                 <div class="button-box">
-                    <div id= "btn"></div>
-                    <button type="button" class="toggle-btn">Logga in</button>
-                    <button type="button" class="toggle-btn">Registera</button>
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Logga in</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Registera</button>
 
                 </div>
                 <div class="social-media">
                     <ul>
                         <li><i class="fab fa-facebook-f"></i></li>
-                        <li><i class = "fab fa-instagram"></i></li>
-                        <li><i class = "fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
 
                     </ul>
                 </div>
-                <form class = "input-group">
+                <form id="login" class="input-group">
                     <input type="text" class="input-field" placeholder="Användar-ID" required>
                     <input type="text" class="input-field" placeholder="Lösenord" required>
                     <input type="checkbox" class=check-box> <span>Glömt lösenord</span>
-                    <button type ="submit" class="submit-btn">Logga in</button>
-
+                    <button type="submit" class="submit-btn">Logga in</button>
+                </form>
+                <form id= "register" class="input-group">
+                    <input type="text" class="input-field" placeholder="Användar-ID" required>
+                    <input type="email" class="input-field" placeholder="Email-adress" required>
+                    <input type="text" class="input-field" placeholder="Lösenord" required>
+                    <input type="checkbox" class=check-box> <span>Jag godkänner villkoren och sekretesspolicyn</span>
+                    <button type="submit" class="submit-btn">Registera</button>
                 </form>
             </div>
         </div>
 
-        
+
 
 
     </main>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            
+        }
+
+        
+    </script>
 
 </body>
 

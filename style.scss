@@ -136,7 +136,14 @@ header{
                 position: relative;
                 background: linear-gradient(red, blue);
                 border-radius: 10px;
+                color: white;
+                
+                
 
+            }
+
+            .toggle-btn:hover{
+                opacity: 0.9;
             }
         }
     }
@@ -199,6 +206,12 @@ header{
     border: 0;
     outline: none;
     border-radius: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.submit-btn:hover{
+    opacity: 0.9;
 }
 
 .check-box{
@@ -211,6 +224,14 @@ span{
     position: absolute;
     bottom: 68px;
 
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
 }
 
     
